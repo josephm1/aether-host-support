@@ -1,3 +1,10 @@
+> **This branch adds inline Pi extension messages.** Interactive UI and Anatomy are
+> [two separate extensions](https://github.com/josephm1/aether-visuals), with independent
+> tools, menus and storage. Their figures stay inside the originating conversation.
+> See [the focused change breakdown and validation limits](docs/inline-extension-messages.md).
+> Android builds and local regressions pass; final physical interaction and iOS
+> verification are pending. This feature has not been submitted upstream.
+
 <p align="center">
   <img src="app/src/main/res/drawable-nodpi/aether_mark.png" width="128" height="128" alt="Aether Logo">
 </p>

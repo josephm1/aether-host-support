@@ -333,7 +333,7 @@ private fun AetherScriptExtensionComponentHost(
 }
 
 @Composable
-private fun AetherExtensionView(
+internal fun AetherExtensionView(
     value: Any?,
     extensionId: String,
     modifier: Modifier = Modifier,
