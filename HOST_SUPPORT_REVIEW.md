@@ -4,7 +4,7 @@ This branch adds generic Android platform hooks for the separately installed
 [Apps extension](https://github.com/josephm1/aether-apps). The editable applications
 live in [aether-webapps](https://github.com/josephm1/aether-webapps). Neither the
 extension nor any application source/data is bundled into this native change.
-No pull request has been submitted to Zhou-Shilin/Aether.
+Upstream draft PR: [Zhou-Shilin/Aether#120](https://github.com/Zhou-Shilin/Aether/pull/120). It contains the implementation and API documentation only; this review note remains in the fork.
 
 ## Comparison and size
 
@@ -98,7 +98,7 @@ refactor, but doing so solely to shorten this patch would expand its scope.
 
 - [README contribution section](https://github.com/Zhou-Shilin/Aether#-contributing)
   welcomes issues and pull requests. It also invites an extension-list PR for new
-  extensions; no such PR has been opened.
+  extensions; no extension-list PR has been opened.
 - No separate CONTRIBUTING file, PR template or CLA/DCO instruction was found in
   the current repository tree. This is an observation at the pinned revision,
   not a guarantee about future maintainer requirements.
@@ -113,5 +113,6 @@ refactor, but doing so solely to shorten this patch would expand its scope.
   separately retains LearnHarness's AGPL licence and excludes private medical
   reference libraries and personal data.
 
-The review branch is public in the user's fork. Submission to the main project
-remains on hold for the user's review and optimization decisions.
+The user authorized submission after reviewing the breakdown. Draft PR #120 is
+open for architecture feedback; it has not been merged. iOS and device regression
+validation remain outstanding.
