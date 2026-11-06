@@ -224,8 +224,8 @@ class AetherAppExtensionManager(
     }
 
     fun start(context: JSONObject = JSONObject()) {
-        latestContextJson = context.toString()
         if (!started.compareAndSet(false, true)) return
+        latestContextJson = context.toString()
         subscriptionJob = scope.launch {
             while (true) {
                 try {

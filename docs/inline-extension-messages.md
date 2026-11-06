@@ -8,7 +8,7 @@ Interactive UI and Anatomy remain independently installable from
 ## Native change breakdown
 
 Compared with the existing host-support branch: 13 runtime source files,
-107 added lines and two removed lines. Two test files add 30 lines. Documentation
+108 added lines and three removed lines. Two test files add 30 lines. Documentation
 is counted separately.
 
 - **Pi bridge:** after a prompt settles, collect only newly committed display
@@ -43,3 +43,12 @@ state their actual environment. These do not establish native device correctness
 Final physical-device interaction is assigned to the user. iOS source was updated,
 but Xcode compilation, signing and device verification require a Mac and remain
 pending. No upstream PR for this feature has been opened or updated.
+
+## Context refresh fix
+
+Repeated Android `start(context)` calls now return before changing the remembered
+context. Previously they overwrote it before `updateContext` compared the new
+value, so new custom-message content could fail to refresh and show only its text
+fallback. iOS already refreshes on conversation/message-count changes.
+The Android hosted APK rebuilt and the five focused unit tests passed; final
+physical verification of this fix is pending.
